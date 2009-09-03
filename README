@@ -1,0 +1,63 @@
+BetterAmp 1.0 for Movable Type
+-------------------------------------------------------------------------------
+
+BetterAmp is a free plugin for Movable Type. It safely rewrites
+ampersand characters as an HTML entity reference: "&amp;" and wraps the
+entity in a semantically neutral <span> element with a class of "amp",
+allowing a method to directly specify CSS styles for ampersand
+characters.
+
+Installation
+============
+BetterAmp requires Movable Type version 4 or later.
+
+1.  Copy the BetterAmp folder into your Movable Type plugins directory.
+    If you don't have a plugins directory, create an empty directory
+    named "plugins" in your MT server root, and put BetterAmp inside
+    that new directory. In other words, your installation should look
+    like this:
+
+    (MT home)/plugins/BetterAmp
+
+    If you're using Movable Type's "dynamic publishing" model, you'll
+    automatically be able to use the PHP version of the BetterAmp plugin
+    which can be found in the php subfolder. Movable Type should
+    automatically load this extension for you, at least as of version 4.x.
+
+2.  Now it's time to edit your blog templates. Any tags that might
+    contain a stray ampersand should be modified to call
+    encode_ampersands. mt:EntryBody is an obvious place to start:
+
+      <mt:EntryBody>
+
+    becomes
+
+      <mt:EntryBody better_amp="1">
+
+    Easy! Ditto for mt:EntryMore, or mt:EntryTitle:
+
+      <mt:EntryMore better_amp="1">
+      <mt:EntryTitle better_amp="1">
+
+    You're done.
+
+
+Version History
+===============
+1.0: Tuesday, September 2, 2009
+     Initial release.
+
+
+Author
+======
+Scott Boms
+http://www.scottboms.com
+
+Based on code originally by Nathaniel Irons
+
+
+Copyright and License
+=====================
+Copyright (c) 2009 Scott Boms. All rights reserved. This program is free
+software; you can redistribute it and/or modify it under the same terms
+as Perl itself.
