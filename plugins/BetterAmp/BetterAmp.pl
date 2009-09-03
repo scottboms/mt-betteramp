@@ -21,13 +21,14 @@ use vars qw($VERSION);
 our $VERSION = "1.0";
 
 my $plugin = MT::Plugin::BetterAmp->new({
-  id => 'betteramp',
-  name => 'BetterAmp',
+  id          => 'betteramp',
+  name        => 'BetterAmp',
   description => 'Typographically enhanced ampersands.',
   author_name => 'Scott Boms (based on code originally by Nathaniel Irons)',
   author_link => 'http://www.scottboms.com',
-  icon => 'ba-icon.gif',
-  version => $VERSION,
+  doc_link    => 'http://github.com/scottboms/mt-betteramp',
+  icon        => 'ba-icon.gif',
+  version     => $VERSION,
 });
 
 MT->add_plugin($plugin);
