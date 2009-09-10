@@ -1,4 +1,4 @@
-BetterAmp 1.0 for Movable Type
+BetterAmp 1.0.1 for Movable Type
 -------------------------------------------------------------------------------
 
 BetterAmp is a free plugin for Movable Type. It safely rewrites
@@ -44,8 +44,11 @@ BetterAmp requires Movable Type version 4 or later.
 
 Version History
 ===============
-1.0: Tuesday, September 2, 2009
-     Initial release.
+1.0.1:  Wednesday, September 9, 2009
+        Updated plugin code for improved MT4 support. No more complaining when in debug mode.
+
+1.0:    Tuesday, September 2, 2009
+        Initial release.
 
 
 Author
