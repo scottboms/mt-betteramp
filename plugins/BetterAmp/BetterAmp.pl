@@ -16,7 +16,6 @@ use warnings;
 
 require MT;
 use base qw( MT::Plugin );
-use MT::Util qw( rtrim );
 
 use MT::Template::Context;
 use vars qw($VERSION);
